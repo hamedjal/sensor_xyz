@@ -1,0 +1,5 @@
+if(CONFIG_SENSOR_XYZ)
+  zephyr_library()
+  zephyr_library_sources(drivers/sensor/sensor_xyz.c)
+  zephyr_include_directories(include)
+endif()
