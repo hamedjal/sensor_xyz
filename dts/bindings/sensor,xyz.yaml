@@ -1,0 +1,9 @@
+compatible: "sensor,xyz"
+properties:
+  label:
+    type: string    
+
+  odr-hz:
+    type: int
+    default: 100
+    description: Output data rate in Hz (1..1600)
