@@ -17,7 +17,7 @@
 
 #include "sensor_xyz.h"
 
-LOG_MODULE_REGISTER(sensor_xyz, CONFIG_SENSOR_XYZ_LOG_LEVEL);
+LOG_MODULE_REGISTER(sensor_xyz);
 
 #define XYZ_PERIOD_US      (USEC_PER_SEC / CONFIG_SENSOR_XYZ_RATE_HZ)
 #define XYZ_GRAVITY_UMS2   9806650LL   
