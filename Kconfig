@@ -1,0 +1,19 @@
+config SENSOR_XYZ
+	bool "Enable or disable fake XYZ accelerometer"
+	default y	
+	help
+	  Fake XYZ accelerometer.
+
+if SENSOR_XYZ
+
+config SENSOR_XYZ_RATE_HZ
+	int "Output data rate (Hz)"
+	default 100
+	range 1 1600
+	help
+	  Rate at which the internal timer generates a new sample.
+
+module = SENSOR_XYZ
+module-str = Fake XYZ accelerometer
+
+endif # SENSOR_XYZ
